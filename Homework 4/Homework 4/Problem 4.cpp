@@ -48,7 +48,7 @@ int main()
 		cin >> input;
 		if (input == "done") break;
 
-		fileOut << toNum(input) << lastValue - toNum(input) << endl;
+		fileOut << toNum(input) << " " << lastValue - toNum(input) << endl;
 		lastValue = toNum(input);
 		data.push_back(lastValue);
 	}
@@ -61,5 +61,7 @@ int main()
 
 	cout << "Average: " << sum / data.size() << endl;
 
+
+	cin.get(); cin.get();	//Hold the window open
 	return 0;
 }
