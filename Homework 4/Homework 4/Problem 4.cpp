@@ -48,7 +48,7 @@ int main()
 		cin >> input;
 		if (input == "done") break;
 
-		fileOut << toNum(input) << " " << lastValue - toNum(input) << endl;
+		fileOut << toNum(input) << " " << toNum(input) - lastValue << endl;
 		lastValue = toNum(input);
 		data.push_back(lastValue);
 	}
