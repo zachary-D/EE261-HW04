@@ -63,5 +63,6 @@ int main()
 
 
 	cin.get(); cin.get();	//Hold the window open
+	fileOut.close();
 	return 0;
 }
